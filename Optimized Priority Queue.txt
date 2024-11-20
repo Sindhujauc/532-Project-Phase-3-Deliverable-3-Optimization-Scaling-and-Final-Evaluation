@@ -1,0 +1,15 @@
+# Optimized Priority Queue using Heap in Python
+import heapq
+
+# Initialize a priority queue
+priority_queue = []
+
+# Push elements with priority
+heapq.heappush(priority_queue, (2, "Task A"))
+heapq.heappush(priority_queue, (1, "Task B"))
+heapq.heappush(priority_queue, (3, "Task C"))
+
+# Pop elements based on priority
+while priority_queue:
+    priority = heapq.heappop(priority_queue)
+    print(f"Processing: {priority[1]} with priority {priority[0]}")
